@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color:hsl(216, 12%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+.container, .thanks{
+    background-color: hsl(213, 19%, 18%);
+    height: 320px;
+    width: 350px;
+    border-radius: 20px;
+    padding: 30px;
+    color: hsl(0, 0%, 100%);
+}
+
+.container img, h2, p, .options{
+    margin-bottom: 20px;
+}
+
+.container img{
+    background-color: hsl(212, 22%, 15%);
+    border-radius: 50%;
+    max-width: 100%;
+    padding: 0.8rem;
+}
+
+p{
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+
+#option{
+    background-color: hsl(212, 22%, 15%);
+    border-radius: 50px;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border: none;
+    margin: 8px;
+    font-family: 'Overpass', sans-serif;
+}
+
+#submit{
+    color: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 340px;
+    background-color: hsl(25, 97%, 53%);
+    letter-spacing: 2px;
+    border: none;
+    font-family: 'Overpass', sans-serif;
+}
+
+#option:hover{
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+#option:focus{ /* change the style of the component if selected */
+    background-color: hsl(217, 12%, 63%);
+}
+
+#submit:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+    cursor: pointer;
+}
+
+.thanks{
+    text-align: center;
+}
+
+.thanks.hidden{ 
+    display: none; /* hidden the thank you state */
+}
+
+.thanks h3{
+    color: #fff;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.thanks img{
+    display: block;
+    margin: 0 auto 1rem;
+}
+
